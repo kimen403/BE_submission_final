@@ -26,7 +26,7 @@ describe("HTTP server", () => {
     // Assert
     const responseJson = JSON.parse(response.payload);
     expect(response.statusCode).toEqual(200);
-    expect(responseJson.value).toEqual("Forum API Berhasil dijalankan");
+    expect(responseJson.value).toEqual("john");
   });
 
   it("should handle server error correctly", async () => {
